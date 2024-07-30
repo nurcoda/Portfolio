@@ -11,7 +11,7 @@ body {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
-    src: url('/src/assets/fonts/syne-v22-latin-regular.woff2') format('woff2');
+    src: url('./assets/fonts/syne-v22-latin-regular.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -22,7 +22,7 @@ body {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 500;
-    src: url('/src/assets/fonts/syne-v22-latin-500.woff2') format('woff2');
+    src: url('./assets/fonts/syne-v22-latin-500.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -33,7 +33,7 @@ body {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 600;
-    src: url('/src/assets/fonts/syne-v22-latin-600.woff2') format('woff2');
+    src: url('./assets/fonts/syne-v22-latin-600.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -44,7 +44,7 @@ body {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
-    src: url('/src/assets/fonts/syne-v22-latin-700.woff2') format('woff2');
+    src: url('./assets/fonts/syne-v22-latin-700.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -55,10 +55,14 @@ body {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 800;
-    src: url('/src/assets/fonts/syne-v22-latin-800.woff2') format('woff2');
+    src: url('./assets/fonts/syne-v22-latin-800.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.fontSyne {
+.font-Syne {
     font-family: 'Syne';
+}
+
+.highlight-Lila {
+    color: #9747FF;
 }
