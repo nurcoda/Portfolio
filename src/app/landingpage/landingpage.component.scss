@@ -36,6 +36,17 @@ hr {
     background-color: black;
 }
 
+#rotateText {
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+}
+
+.scroll-down-arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .slideshow {
     width: 116px;
     /* Breite der Bilder */
@@ -43,7 +54,7 @@ hr {
     /* Höhe der Bilder */
     background-size: cover;
     background-position: center;
-    animation: slide 3s infinite;
+    animation: slide 2s infinite;
 }
 
 @keyframes slide {
