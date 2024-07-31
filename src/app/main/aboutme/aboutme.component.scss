@@ -1,0 +1,27 @@
+.about-me {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+h2 {
+    font-size: 78px;
+    font-weight: 800;
+
+    &:hover {
+        color: #9747FF;
+    }
+}
+
+.pe {
+    margin: 0;
+}
+
+.home-remote {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+        height: 40px;
+    }
+}
