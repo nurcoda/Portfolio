@@ -24,4 +24,35 @@ h2 {
     img {
         height: 40px;
     }
+
+    .btn {
+        cursor: pointer;
+        border: solid rgb(0, 0, 0);
+        font-family: "system-ui";
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+        padding: 10px 30px;
+        transition: 835ms;
+        width: 335px;
+        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+        border-radius: 1px;
+        background: linear-gradient(90deg, rgb(251, 253, 255) 0%, rgb(255, 255, 255) 100%);
+        --hover-bgc: #ffffff;
+        --hover-color: #f6fbff;
+        --hover-borderc: #080808;
+        --hover-borderSize: 2;
+        --hover-width: 400px;
+
+        &:hover {
+            color: rgb(246, 251, 255);
+            width: 400px;
+            background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+            border-color: rgb(8, 8, 8);
+            border-width: 3px;
+            border-style: solid;
+        }
+
+    }
+
+
 }
