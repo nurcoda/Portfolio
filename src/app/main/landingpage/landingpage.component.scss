@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 204px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .line-name {
@@ -40,19 +42,19 @@ hr {
     display: flex;
     justify-content: space-between;
     padding-top: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #rotateText {
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
-    padding-right: 100px;
 }
 
 .scroll-down-arrow-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 100px;
 }
 
 .slideshow {
