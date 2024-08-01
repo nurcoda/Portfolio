@@ -1,0 +1,42 @@
+.myskillarrow {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.myskillarrow img {
+    height: 215px;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 2s ease-in-out;
+}
+
+.myskillarrow:hover img {
+    animation: myskillAnimation 3s forwards;
+}
+
+@keyframes myskillAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    34% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0;
+    }
+
+    67% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
