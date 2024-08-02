@@ -1,3 +1,11 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
+
 .burger-menu {
     display: flex;
     flex-direction: column;
@@ -8,7 +16,7 @@
 }
 
 .burger-menu-line {
-    background-color: var(--font-color-black);
+    background-color: black;
     width: 40px;
     height: 4px;
 }
