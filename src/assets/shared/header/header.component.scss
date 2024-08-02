@@ -1,0 +1,14 @@
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger-menu-line {
+    background-color: var(--font-color-black);
+    width: 40px;
+    height: 4px;
+}

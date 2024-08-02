@@ -4,6 +4,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { MyskillComponent } from "./myskill/myskill.component";
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
+
 @Component({
   selector: 'app-main',
   standalone: true,
