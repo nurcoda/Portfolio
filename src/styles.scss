@@ -6,6 +6,17 @@ body {
 }
 
 
+body::-webkit-scrollbar {
+    width: 10px
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9747FF;
+    border-radius: 10px;
+    border: 3px solid #9747FF;
+}
+
+
 /* syne-regular - latin */
 @font-face {
     font-display: swap;
@@ -60,10 +71,6 @@ body {
     src: url('./assets/fonts/syne-v22-latin-800.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-// .font-Syne {
-//     font-family: 'Syne';
-// }
 
 .highlight-Lila {
     color: #9747FF;
