@@ -23,7 +23,7 @@ h2 {
     }
 }
 
-p {
+.ptxt {
     text-align: center;
     padding-bottom: 60px;
 }
@@ -40,16 +40,16 @@ p {
 
 .image-wrapper img {
     max-height: 100%;
-    height: 320px;
+    height: 370px;
     object-fit: cover;
 }
 
 .image-wrapper::before {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: -15px;
+    top: 20px;
+    left: 20px;
+    right: -20px;
     bottom: -15px;
     border: 5px solid transparent;
     transition: border-color 0.3s ease;
@@ -59,9 +59,59 @@ p {
     border-color: rgb(8, 8, 8);
 }
 
+.project-container-two {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 60px;
+    gap: 70px;
+
+}
+
+.numberof-two {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+}
+
+.reversed {
+    display: flex;
+    gap: 70px;
+}
+
+.project-button-container {}
+
+.project-description-wrapper {}
+
+.numberof {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: right;
+    margin: 0;
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.code-description {
+    color: #9747FF;
+    font-size: 23px;
+    margin: 0;
+}
+
+.simple-project-description {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
 .button-wrapper {
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    margin: 0;
 }
 
 .button-container {}

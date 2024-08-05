@@ -37,7 +37,7 @@ h1 {
 }
 
 .icon-skills {
-    width: calc(100% / 4 - 20px);
+    width: 10vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +45,7 @@ h1 {
     gap: 10px;
     font-size: 16px;
     font-weight: 700;
+
 
     img {
         height: 75px;
