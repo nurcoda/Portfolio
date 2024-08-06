@@ -1,8 +1,20 @@
 <div class="nav-container">
     <img class="logo" src="./assets/img/logonot.png" alt="" class="logo" />
-    <div class="burger-menu">
+    <div (click)="toggleNav()" class="burger-menu">
         <div class="burger-menu-line"></div>
         <div class="burger-menu-line"></div>
         <div class="burger-menu-line"></div>
     </div>
+
 </div>
+
+
+@if (isOpen) {
+<div class="fullscreen-nav">
+    <div class="navpoint-wrapper">
+        <a href="">About me</a>
+        <a href="">My Skills</a>
+        <a href="#">Portfolio</a>
+    </div>
+</div>
+}
