@@ -144,18 +144,4 @@ h3 {
     }
 
 
-    .project-button-container {
-        position: relative;
-        left: -100%;
-        /* Start außerhalb des sichtbaren Bereichs */
-        transition: left 1s ease-in-out;
-        /* Transition für die Slide-Bewegung */
-    }
-
-    /* Klasse, die hinzugefügt wird, um die Animation zu starten */
-    .project-button-container.slide-in {
-        left: 0;
-        /* Zielposition im sichtbaren Bereich */
-    }
-
 }
