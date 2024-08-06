@@ -1,12 +1,13 @@
 <div class="nav-container">
     <img class="logo" src="./assets/img/logonot.png" alt="" class="logo" />
-    <div (click)="toggleNav()" class="burger-menu">
-        <div class="burger-menu-line"></div>
-        <div class="burger-menu-line"></div>
-        <div class="burger-menu-line"></div>
+    <div (click)="toggleNav()" class="burger-menu" [ngClass]="{'burger-menu-crossed': isOpen}">
+        <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
+        <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
+        <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
     </div>
 
 </div>
+
 
 
 @if (isOpen) {
