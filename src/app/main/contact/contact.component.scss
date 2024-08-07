@@ -1,9 +1,6 @@
 footer {
     position: relative;
-}
-
-.background-picture {
-    position: absolute;
-    width: 100%;
-    // bottom: 0;
+    background-image: url("./../../../assets/img/footerbackground.svg");
+    background-size: cover;
+    height: 150vh;
 }

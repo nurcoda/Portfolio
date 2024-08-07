@@ -81,7 +81,7 @@
         color: black;
         text-decoration: none;
         font-weight: 800;
-        position: relative; // Wichtig für das absolute Pseudoelement
+        position: relative;
 
         &::after {
             content: '';
@@ -100,46 +100,6 @@
     }
 }
 
-// a {
-//     font-size: 66px;
-//     color: black;
-//     text-decoration: none;
-//     font-weight: 800;
-// }
-
-// a::before,
-// a::after {
-//     content: "";
-//     position: absolute;
-//     background-color: black;
-//     transition: all 500ms ease-in-out;
-// }
-
-// a::before {
-//     bottom: 0;
-//     left: 0;
-//     height: 50%;
-//     width: 5px;
-// }
-
-// a::after {
-//     bottom: 0;
-//     left: 0;
-//     height: 5px;
-//     width: 10%;
-// }
-
-// a:hover::before {
-//     width: 0px;
-//     height: 0;
-// }
-
-// a:hover::after {
-//     height: 5px;
-//     left: 25%;
-//     width: 50%;
-// }
-
 header {
     background-image: url('./../../../assets/img/Rectangle5.png');
     background-size: cover;
@@ -152,11 +112,12 @@ header {
 }
 
 h1 {
+    width: 20%;
     font-size: 56px;
     color: #FFFCF3;
     margin: 0;
-    padding-top: 115px;
-    padding-left: 100px;
+    margin-top: 115px;
+    margin-left: 100px;
 
     &:hover {
         color: #9747FF;
@@ -170,9 +131,102 @@ h1 {
     gap: 22px;
     margin-top: 30px;
     padding-right: 40px;
+}
 
-    img {
-        height: 30px;
-        object-fit: cover;
+.e-mail-icon {
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.e-mail-icon:hover {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.git-hub-icon {
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+.git-hub-icon:hover {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    20%,
+    53%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    53%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
     }
 }
