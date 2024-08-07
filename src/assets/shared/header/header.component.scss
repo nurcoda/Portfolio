@@ -7,7 +7,6 @@
     z-index: 100;
     padding-top: 30px;
     background-color: #FFFCF3;
-    max-width: 1920px;
 }
 
 .logo {
@@ -150,4 +149,30 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+h1 {
+    font-size: 56px;
+    color: #FFFCF3;
+    margin: 0;
+    padding-top: 115px;
+    padding-left: 100px;
+
+    &:hover {
+        color: #9747FF;
+        cursor: pointer;
+    }
+}
+
+.icons-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+    margin-top: 30px;
+    padding-right: 40px;
+
+    img {
+        height: 30px;
+        object-fit: cover;
+    }
 }
