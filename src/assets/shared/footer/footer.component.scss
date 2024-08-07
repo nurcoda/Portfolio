@@ -1,9 +1,21 @@
-footer {
-    position: relative;
+.footer-content {
+    display: flex;
 }
 
-.background-picture {
-    position: absolute;
-    width: 100%;
-    // bottom: 0;
+.logo-name {
+    color: white;
+
+    img {
+        height: 50px;
+    }
+}
+
+.social-media {}
+
+.github-icon {
+    height: 30px;
+}
+
+.mail-icon {
+    height: 30px;
 }
