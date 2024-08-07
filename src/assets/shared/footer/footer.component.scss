@@ -1,23 +1,38 @@
 .footer-content {
     display: flex;
+    justify-content: space-around;
+    background-color: black;
+
 }
 
 .logo-name {
-    color: rgb(216, 36, 36);
+    margin-top: 20px;
+    color: white;
 
     img {
         height: 30px;
     }
 }
 
-.social-media {}
+.social-media-wrapper {
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+
+}
 
 .github-icon {
     height: 30px;
+    gap: 15px;
 }
 
 .mail-icon {
     height: 30px;
+    gap: 15px;
 }
 
 .legal-notice {
