@@ -19,7 +19,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 80%;
-
+    margin-bottom: 38px;
 }
 
 h3 {
@@ -44,7 +44,13 @@ label {
     color: white;
 }
 
+.red-alter-text {
+    color: red;
+    font-size: 12px;
+}
+
 input {
+    width: 500px;
     border: none;
     /* Entfernt die standardmäßige Umrandung */
     border-bottom: 2px solid white;
@@ -67,6 +73,7 @@ input:focus {
 }
 
 textarea {
+    width: 500px;
     border: none;
     /* Entfernt die standardmäßige Umrandung */
     border-bottom: 2px solid white;
@@ -91,6 +98,7 @@ textarea:focus {
 }
 
 input[type="submit"] {
+    width: 150px;
     border: 2px solid white;
     /* Volle Umrandung in Weiß */
     background-color: transparent;

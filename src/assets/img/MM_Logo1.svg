@@ -2,77 +2,47 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="17.947502mm"
+   height="10.265023mm"
+   viewBox="0 0 17.947502 10.265023"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="JS_Logo.svg"
-   inkscape:export-filename="MM_Logo1.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="4.1798822"
-     inkscape:cx="215.91518"
-     inkscape:cy="466.40071"
-     inkscape:window-width="1536"
-     inkscape:window-height="889"
-     inkscape:window-x="2552"
-     inkscape:window-y="95"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
   <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-54.405874,-118.68193)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.87777px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583"
-       x="69.735016"
-       y="126.26601"
+       x="69.671715"
+       y="126.29765"
        id="text8"><tspan
-         sodipodi:role="line"
          id="tspan8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';stroke-width:0.264583"
-         x="69.735016"
-         y="126.26601">]</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';stroke-width:0.264583"
+         x="69.671715"
+         y="126.29765">]</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583"
-       x="53.845459"
-       y="127.47454"
+       x="53.571472"
+       y="127.5193"
        id="text9"><tspan
-         sodipodi:role="line"
          id="tspan9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';stroke-width:0.264583"
-         x="53.845459"
-         y="127.47454">[</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans Semi-Bold';stroke-width:0.264583"
+         x="53.571472"
+         y="127.5193">[</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87777px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:0.264583"
        x="44.426502"
        y="131.94514"
        id="text12"
        transform="rotate(-5)"><tspan
-         sodipodi:role="line"
          id="tspan12"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#9747ff;fill-opacity:1;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#9747ff;fill-opacity:1;stroke-width:0.264583"
          x="44.426502"
          y="131.94514">MM</tspan></text>
   </g>
