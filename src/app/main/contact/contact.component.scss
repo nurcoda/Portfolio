@@ -2,5 +2,105 @@ footer {
     position: relative;
     background-image: url("./../../../assets/img/footerbackground.svg");
     background-size: cover;
-    height: 150vh;
+    height: 100vh;
+    padding-left: 100px;
+
+}
+
+h2 {
+    color: white;
+    font-size: 76px;
+    width: 80%;
+    padding-top: 20vh;
+}
+
+.contact-discription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+}
+
+h3 {
+    color: #9747FF;
+
+}
+
+p {
+    color: white;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 8px
+}
+
+label {
+    color: white;
+}
+
+input {
+    border: none;
+    /* Entfernt die standardmäßige Umrandung */
+    border-bottom: 2px solid white;
+    /* Setzt eine untere Linie in Weiß */
+    background-color: transparent;
+    /* Hintergrund transparent, falls nötig */
+    color: white;
+    /* Textfarbe in Weiß */
+    outline: none;
+    /* Entfernt die Standard-Hervorhebung des Browsers */
+    padding: 5px 0;
+    /* Optional: etwas Platz oben und unten */
+    transition: border 0.3s ease-in-out;
+    /* Weiche Übergänge beim Fokus */
+}
+
+input:focus {
+    border: 2px solid white;
+    /* Volle Umrandung in Weiß beim Fokus */
+}
+
+textarea {
+    border: none;
+    /* Entfernt die standardmäßige Umrandung */
+    border-bottom: 2px solid white;
+    /* Setzt eine untere Linie in Weiß */
+    background-color: transparent;
+    /* Hintergrund transparent, falls nötig */
+    color: white;
+    /* Textfarbe in Weiß */
+    outline: none;
+    /* Entfernt die Standard-Hervorhebung des Browsers */
+    padding: 5px 0;
+    /* Optional: etwas Platz oben und unten */
+    transition: border 0.3s ease-in-out;
+    /* Weiche Übergänge beim Fokus */
+    resize: none;
+    /* Verhindert das Größenverändern der textarea, optional */
+}
+
+textarea:focus {
+    border: 2px solid white;
+    /* Volle Umrandung in Weiß beim Fokus */
+}
+
+input[type="submit"] {
+    border: 2px solid white;
+    /* Volle Umrandung in Weiß */
+    background-color: transparent;
+    /* Hintergrund transparent */
+    color: white;
+    /* Textfarbe in Weiß */
+    padding: 10px 20px;
+    /* Etwas Polsterung für das Button-Design */
+    cursor: pointer;
+    /* Zeigt einen Zeiger an, wenn der Benutzer darüber schwebt */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    /* Weiche Übergänge für Hintergrundfarbe und Textfarbe */
 }
