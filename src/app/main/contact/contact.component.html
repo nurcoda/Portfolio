@@ -1,5 +1,26 @@
 <p>contact works!</p>
-<footer>
+<section>
 
+    <h2>Say Hi!</h2>
 
-</footer>
+    <div class="contact-content">
+        <h3>Want to discuss a new project?</h3>
+        <p>Say hello! let's discuss your ideas and make it happen</p>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">First Name</label>
+        <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your First Name...">
+
+        <label for="email">Email</label>
+        <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your e-mail...">
+
+        <label for="message">Last Name</label>
+        <textarea [(ngModel)]="contactData.message" type="message" id="message" name="message"
+            placeholder="Your message...">
+
+<input type="submit" value="Submit">
+
+    </form>
+
+</section>
