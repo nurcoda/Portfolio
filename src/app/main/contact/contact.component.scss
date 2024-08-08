@@ -2,7 +2,7 @@ footer {
     position: relative;
     background-image: url("./../../../assets/img/footerbackground.svg");
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     padding-left: 100px;
 
 }
@@ -18,7 +18,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
     margin-bottom: 38px;
 }
 
@@ -36,12 +35,27 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
     gap: 8px
 }
 
 label {
     color: white;
+}
+
+.privacy-policy {
+    text-decoration: none;
+    color: #9747FF;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
 }
 
 .red-alter-text {
@@ -61,7 +75,7 @@ input {
     /* Textfarbe in Weiß */
     outline: none;
     /* Entfernt die Standard-Hervorhebung des Browsers */
-    padding: 5px 0;
+    padding: 15px 0;
     /* Optional: etwas Platz oben und unten */
     transition: border 0.3s ease-in-out;
     /* Weiche Übergänge beim Fokus */

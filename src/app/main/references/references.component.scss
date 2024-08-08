@@ -4,13 +4,6 @@
     padding-top: 120px;
 }
 
-.title-description {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .description {
     text-align: center;
 }
@@ -31,12 +24,14 @@ h2 {
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 160px;
 }
 
 .reference-posts-container {
     display: flex;
     gap: 10px;
     width: 30vw;
+    min-width: 400px;
 }
 
 .reference-wrapper {

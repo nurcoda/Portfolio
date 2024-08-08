@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,23 +7,23 @@ import { Component } from '@angular/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
 
-  ngAfterViewInit() {
-    const slideElement = document.getElementById('slide');
+  ngOnInit(): void {
+    window.addEventListener('scroll', this.onScroll);
+  }
 
-    if (slideElement) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            slideElement.style.animation = 'slide 0.5s forwards';
-            observer.unobserve(slideElement); // Animation nur einmal ausführen
-          }
-        });
-      });
+  onScroll = () => {
+    const elements = document.querySelectorAll<HTMLElement>('.myskillarrow');
 
-      observer.observe(slideElement);
-    }
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top <= windowHeight && rect.bottom >= 0) {
+        element.classList.add('zoomInDown');
+      }
+    });
   }
 
 }
