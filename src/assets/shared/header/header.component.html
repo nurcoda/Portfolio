@@ -13,13 +13,13 @@
 @if (isOpen) {
 <div class="fullscreen-nav">
     <div class="navpoint-wrapper">
-        <a href="">About me</a>
-        <a href="">My Skills</a>
-        <a href="#">Portfolio</a>
+        <a (click)="toggleNav()" href="#aboutme">About me</a>
+        <a (click)="toggleNav()" href="#myskills">My Skills</a>
+        <a (click)="toggleNav()" href="#portfolio">Portfolio</a>
     </div>
     <header>
         <div>
-            <a href="#contact">
+            <a (click)="toggleNav()" class="contact-link" href="#contact">
                 <h1>Contact</h1>
             </a>
 
