@@ -20,10 +20,16 @@ export class ContactComponent {
     message: "",
   }
 
-  isCheckboxChecked: boolean = false;
+  isCheckboxChecked = true;
   mailTest = false;
 
-
+  updateCheckboxStatus(form: NgForm) {
+    if (form.valid) {
+      this.isCheckboxChecked = true; // Checkbox aktivieren, wenn das Formular gültig ist
+    } else {
+      this.isCheckboxChecked = false; // Checkbox deaktivieren, wenn das Formular ungültig ist
+    }
+  }
 
   post = {
     endPoint: 'https://mailo-mittelstaedt.de//sendMail.php',
