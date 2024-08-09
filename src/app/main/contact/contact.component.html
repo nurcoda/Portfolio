@@ -33,12 +33,14 @@
         }
 
         <div class="checkbox-wrapper">
-            <input type="checkbox" name="checkbox" id="checkbox_id" value="value">
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value" [(ngModel)]="isCheckboxChecked">
             <label for="checkbox_id">I've read the <a class="privacy-policy" href="">privacy policy</a> and agree to the
                 processing of my data as
                 outlined.</label>
         </div>
-        <input type="submit" value="Send message">
+
+        <input type="submit" value="Send message" [ngClass]="{'grey': contactForm?.valid && isCheckboxChecked}"
+            [disabled]="!(contactForm?.valid && isCheckboxChecked)">
     </form>
 
 </footer>

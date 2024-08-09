@@ -113,6 +113,10 @@ textarea:focus {
 
 input[type="submit"] {
     width: 150px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
     border: 2px solid white;
     /* Volle Umrandung in Weiß */
     background-color: transparent;
@@ -125,4 +129,8 @@ input[type="submit"] {
     /* Zeigt einen Zeiger an, wenn der Benutzer darüber schwebt */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     /* Weiche Übergänge für Hintergrundfarbe und Textfarbe */
+}
+
+.grey {
+    border: 2px solid grey;
 }

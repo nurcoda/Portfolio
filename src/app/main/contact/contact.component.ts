@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -19,13 +20,10 @@ export class ContactComponent {
     message: "",
   }
 
-  //   onSubmit(ngForm: NgForm) {
-  //     if (ngForm.valid && ngForm.submitted) {
-  //       console.log(this.contactData)
-  //     }
-  //   }
+  isCheckboxChecked: boolean = false;
+  mailTest = false;
 
-  mailTest = true;
+
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
