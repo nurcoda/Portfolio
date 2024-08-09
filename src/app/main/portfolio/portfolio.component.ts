@@ -28,7 +28,7 @@ export class PortfolioComponent implements OnInit {
       }
     });
 
-    // Check if the first project element is visible and hasn't played yet
+
     const projectElement = document.querySelector('.project-button-container') as HTMLElement;
     if (projectElement && !this.slideInLeftPlayed) {
       const rect = projectElement.getBoundingClientRect();
@@ -36,11 +36,10 @@ export class PortfolioComponent implements OnInit {
 
       if (isVisible) {
         projectElement.classList.add('slideInLeft');
-        this.slideInLeftPlayed = true; // Mark as played
+        this.slideInLeftPlayed = true;
       }
     }
 
-    // Check if the second project element is visible and hasn't played yet
     const projectElementTwo = document.querySelector('.project-button-container-two') as HTMLElement;
     if (projectElementTwo && !this.slideInRightPlayed) {
       const rect = projectElementTwo.getBoundingClientRect();
@@ -48,11 +47,10 @@ export class PortfolioComponent implements OnInit {
 
       if (isVisible) {
         projectElementTwo.classList.add('slideInRight');
-        this.slideInRightPlayed = true; // Mark as played
+        this.slideInRightPlayed = true;
       }
     }
 
-    // Remove the event listener if both animations have been played
     if (this.slideInLeftPlayed && this.slideInRightPlayed) {
       window.removeEventListener('scroll', this.onScroll);
     }
