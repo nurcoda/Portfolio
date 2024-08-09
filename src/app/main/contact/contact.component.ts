@@ -21,13 +21,16 @@ export class ContactComponent {
   }
 
   isCheckboxChecked = false;
-  mailTest = false;
+  shouldApplyGrey = true;
+  mailTest = true;
 
   updateCheckboxStatus(form: NgForm) {
     if (form.valid) {
-      this.isCheckboxChecked = true; // Checkbox aktivieren, wenn das Formular gültig ist
+      this.isCheckboxChecked = true;
+      this.shouldApplyGrey = false; // Entferne 'grey', wenn die Checkbox aktiviert ist
     } else {
-      this.isCheckboxChecked = false; // Checkbox deaktivieren, wenn das Formular ungültig ist
+      this.isCheckboxChecked = false;
+      this.shouldApplyGrey = true;  // Wende 'grey' an, wenn das Formular ungültig ist
     }
   }
 
