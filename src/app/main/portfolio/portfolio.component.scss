@@ -130,9 +130,19 @@ h2 {
     gap: 70px;
 }
 
-.project-button-container {}
+.project-button-container {
+    visibility: hidden;
+    /* Element standardmäßig verstecken */
+    opacity: 0;
+    /* Transparenz auf 0 setzen */
+    transition: opacity 0.3s ease-out;
+    /* Für eine weiche Einblendung */
+}
 
 .project-button-container.slideInLeft {
+    visibility: visible;
+    opacity: 1;
+    /* Transparenz auf 1 setzen */
     -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
     -webkit-animation-duration: 1s;
@@ -145,7 +155,6 @@ h2 {
     0% {
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
-        visibility: visible;
     }
 
     100% {
@@ -158,6 +167,38 @@ h2 {
     0% {
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.project-button-container-two {
+    visibility: hidden;
+    /* Element standardmäßig verstecken */
+    opacity: 0;
+    /* Transparenz auf 0 setzen */
+    transition: opacity 0.3s ease-out;
+    /* Für eine weiche Einblendung */
+}
+
+.project-button-container-two.slideInRight {
+    visibility: visible;
+    opacity: 1;
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
         visibility: visible;
     }
 
@@ -166,6 +207,56 @@ h2 {
         transform: translateX(0);
     }
 }
+
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+// .project-button-container {}
+
+// .project-button-container.slideInLeft {
+//     -webkit-animation-name: slideInLeft;
+//     animation-name: slideInLeft;
+//     -webkit-animation-duration: 1s;
+//     animation-duration: 1s;
+//     -webkit-animation-fill-mode: both;
+//     animation-fill-mode: both;
+// }
+
+// @-webkit-keyframes slideInLeft {
+//     0% {
+//         -webkit-transform: translateX(-100%);
+//         transform: translateX(-100%);
+//         visibility: visible;
+//     }
+
+//     100% {
+//         -webkit-transform: translateX(0);
+//         transform: translateX(0);
+//     }
+// }
+
+// @keyframes slideInLeft {
+//     0% {
+//         -webkit-transform: translateX(-100%);
+//         transform: translateX(-100%);
+//         visibility: visible;
+//     }
+
+//     100% {
+//         -webkit-transform: translateX(0);
+//         transform: translateX(0);
+//     }
+// }
 
 .project-description-wrapper {}
 
