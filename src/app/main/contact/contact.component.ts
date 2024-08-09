@@ -20,7 +20,7 @@ export class ContactComponent {
     message: "",
   }
 
-  isCheckboxChecked = true;
+  isCheckboxChecked = false;
   mailTest = false;
 
   updateCheckboxStatus(form: NgForm) {
