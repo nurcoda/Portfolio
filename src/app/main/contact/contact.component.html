@@ -39,8 +39,8 @@
                 outlined.</label>
         </div>
 
-        <input type="submit" value="Send message" [ngClass]="{'grey': contactForm?.valid && isCheckboxChecked}"
-            [disabled]="!(contactForm?.valid && isCheckboxChecked)">
+        <input type="submit" value="Send message" [ngClass]="{'grey': contactForm.valid && isCheckboxChecked}"
+            [disabled]="!(contactForm.valid && isCheckboxChecked)">
     </form>
 
 </footer>
