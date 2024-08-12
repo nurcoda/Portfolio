@@ -1,6 +1,8 @@
 {
     "aboutMe": "Über mich",
     "mySkills": "Meine Skills",
+    "developer": "Entwickler",
+    "down": "Runter",
     "aboutMeTextOne": "Hallo, ich bin ein erfahrener Frontend-Entwickler aus Lübeck mit einer Leidenschaft für moderne Web Technologien. Mein Fokus liegt auf der Erstellung von benutzerfreundlichen und ansprechenden Web-Oberflächen mit HTML, CSS und JavaScript, sowie Frameworks wie Angular.",
     "aboutMeTextTwo": "Es macht mir Spaß, eng mit meinen Kunden zusammenzuarbeiten, um ihre Ideen zu verwirklichen. Wenn Sie ein neues Projekt planen Projekt planen, freue ich mich darauf, gemeinsam etwas Großartiges zu schaffen!",
     "based": "Wohnhaft in Lübeck",
