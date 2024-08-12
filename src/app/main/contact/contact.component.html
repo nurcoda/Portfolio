@@ -10,17 +10,18 @@
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" (ngModelChange)="updateCheckboxStatus(contactForm)">
         <label for="name"></label>
-        <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name..." required>
+        <input [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name"
+            placeholder="Your Name..." required>
 
-        @if (!message.valid && message.touched){
+        @if (!name.valid && name.touched){
         <span class="red-alter-text">Please enter a you Name</span>
         }
 
         <label for="email"></label>
-        <input [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your e-mail..."
-            required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        <input [(ngModel)]="contactData.email" #email="ngModel" type="email" id="email" name="email"
+            placeholder="Your e-mail..." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
-        @if (!message.valid && message.touched){
+        @if (!email.valid && email.touched){
         <span class="red-alter-text">Please enter e-mail address</span>
         }
 
@@ -33,14 +34,20 @@
         }
 
         <div class="checkbox-wrapper">
-            <input type="checkbox" name="checkbox" id="checkbox_id" value="value" [(ngModel)]="isCheckboxChecked">
+            <input type="checkbox" name="checkbox" id="checkbox_id" value="value"
+                (click)="updateCheckboxStatus(contactForm)" [(ngModel)]="isCheckboxChecked">
             <label for="checkbox_id">I've read the <a class="privacy-policy" href="">privacy policy</a> and agree to the
                 processing of my data as
                 outlined.</label>
         </div>
 
-        <input type="submit" value="Send message" [ngClass]="{'grey': shouldApplyGrey}"
+        <input type="submit" class="default-btn" value="Send message"
+            [ngClass]="{'grey': !shouldApplyGrey, 'white':shouldApplyGrey}"
             [disabled]="!(contactForm.valid && isCheckboxChecked)">
+        <div class="it-is-sent" [ngClass]="{'enable': isFormSent, 'disable': !isFormSent}">
+            the email has been sent!
+        </div>
+
     </form>
 
 </footer>

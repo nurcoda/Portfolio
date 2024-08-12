@@ -111,7 +111,7 @@ textarea:focus {
     /* Volle Umrandung in Weiß beim Fokus */
 }
 
-input[type="submit"] {
+.default-btn {
     width: 150px;
     font-family: 'Syne';
     font-style: normal;
@@ -124,13 +124,32 @@ input[type="submit"] {
     color: white;
     /* Textfarbe in Weiß */
     padding: 10px 20px;
-    /* Etwas Polsterung für das Button-Design */
+    /* Etwas space für das Button-Design */
     cursor: pointer;
-    /* Zeigt einen Zeiger an, wenn der Benutzer darüber schwebt */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     /* Weiche Übergänge für Hintergrundfarbe und Textfarbe */
 }
 
 .grey {
     border: 2px solid grey;
+    cursor: default;
+}
+
+
+.white {
+    border: 2px solid rgb(249, 249, 249);
+}
+
+.disable {
+    display: none;
+}
+
+.enable {
+    display: block;
+    transform: translateY(0);
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.it-is-sent {
+    color: green;
 }

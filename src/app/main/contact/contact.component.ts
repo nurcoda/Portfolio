@@ -21,17 +21,27 @@ export class ContactComponent {
   }
 
   isCheckboxChecked = false;
-  shouldApplyGrey = true;
-  mailTest = true;
+  shouldApplyGrey = false;
+  isFormSent = false;
+  mailTest = false;
 
   updateCheckboxStatus(form: NgForm) {
     if (form.valid) {
+      console.log('Form is valid');
       this.isCheckboxChecked = true;
-      this.shouldApplyGrey = false; // Entferne 'grey', wenn die Checkbox aktiviert ist
+      this.shouldApplyGrey = true; // Entferne 'grey', wenn die Checkbox aktiviert ist
     } else {
+      console.log('gehtnicht');
       this.isCheckboxChecked = false;
-      this.shouldApplyGrey = true;  // Wende 'grey' an, wenn das Formular ungültig ist
+      this.shouldApplyGrey = false;  // Wende 'grey' an, wenn das Formular ungültig ist
     }
+  }
+
+  userFeedback() {
+    this.isFormSent = true;
+    setTimeout(() => {
+      this.isFormSent = false;
+    }, 3000);
   }
 
   post = {
@@ -50,7 +60,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.userFeedback();
             ngForm.resetForm();
           },
           error: (error) => {
