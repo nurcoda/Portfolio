@@ -5,10 +5,7 @@
         <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
         <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
     </div>
-    <div class="language">
-        <p (click)="translate.switchLanguage('en')">EN</p>
-        <p (click)="translate.switchLanguage('de')">DE</p>
-    </div>
+
 
 </div>
 
@@ -16,9 +13,13 @@
 
 @if (isOpen) {
 <div class="fullscreen-nav">
+    <div class="language">
+        <p class="en-de" (click)="translate.switchLanguage('en')">EN</p>
+        <p class="en-de" (click)="translate.switchLanguage('de')">DE</p>
+    </div>
     <div class="navpoint-wrapper">
-        <a (click)="toggleNav()" href="#aboutme">About me</a>
-        <a (click)="toggleNav()" href="#myskills">My Skills</a>
+        <a (click)="toggleNav()" href="#aboutme">{{ 'aboutMe' | translate }}</a>
+        <a (click)="toggleNav()" href="#myskills">{{ 'mySkills' | translate }}</a>
         <a (click)="toggleNav()" href="#portfolio">Portfolio</a>
     </div>
     <header>

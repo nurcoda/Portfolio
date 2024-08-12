@@ -1,1 +1,9 @@
-{}
+{
+    "aboutMe": "About me",
+    "mySkills": "My Skills",
+    "aboutMeTextOne": "Hello, I am an experienced frontend developer from Lübeck with a passion for modern web technologies. My focus is on creating user-friendly and appealing web interfaces with HTML, CSS and JavaScript, as well as frameworks such as Angular.",
+    "aboutMeTextTwo": "I enjoy working closely with my clients to turn their ideas into reality. If you are planning a new project, I look forward to creating something great together!",
+    "based": "Based in Lübeck",
+    "remote": "Open to work remote",
+    "letsTalk": "Lets Talk"
+}

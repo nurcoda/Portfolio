@@ -1,33 +1,30 @@
 <div class="about-me" id="aboutme">
 
-    <h2>About Me</h2>
+    <h2>{{ 'aboutMe' | translate }} </h2>
 
     <div class="aboutme-wrapper">
         <div class="content-wrapper">
             <div>
                 <p class="pe">
                 </p>
-                <p class="pe">Hello, I am an experienced frontend developer from Lübeck with a passion for modern web
-                    technologies. My focus is on creating user-friendly and appealing web interfaces with HTML, CSS and
-                    JavaScript, as well as frameworks such as Angular.
+                <p class="pe">{{ 'aboutMeTextOne' | translate }}
                 </p>
-                <p> I enjoy working closely with my clients to turn their ideas into reality. If you are planning a new
-                    project, I look forward to creating something great together!
+                <p> {{ 'aboutMeTextTwo' | translate }}
                 </p>
             </div>
 
             <div class="home-remote">
                 <img src="./assets/img/house.png" alt="House icone">
-                <p>Based in Lübeck</p>
+                <p>{{'based'| translate}}</p>
             </div>
 
             <div class="home-remote">
                 <img src="./assets/img/laptop_chromebook.png" alt="Laptop icone">
-                <p>Open to work remote</p>
+                <p>{{'remote'| translate}}</p>
             </div>
 
             <div class="button-container">
-                <a href="#contact"><button class="btn" id="customBtn">Lets Talk</button></a>
+                <a href="#contact"><button class="btn" id="customBtn">{{'letsTalk'| translate}}</button></a>
             </div>
         </div>
 
