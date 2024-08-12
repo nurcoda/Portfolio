@@ -1,4 +1,5 @@
 {
+    "": "",
     "aboutMe": "Über mich",
     "mySkills": "Meine Skills",
     "developer": "Entwickler",
@@ -7,5 +8,10 @@
     "aboutMeTextTwo": "Es macht mir Spaß, eng mit meinen Kunden zusammenzuarbeiten, um ihre Ideen zu verwirklichen. Wenn Sie ein neues Projekt planen Projekt planen, freue ich mich darauf, gemeinsam etwas Großartiges zu schaffen!",
     "based": "Wohnhaft in Lübeck",
     "remote": "Offen für Remote Arbeit",
-    "letsTalk": "Schreibt Mir"
+    "letsTalk": "Schreibt Mir",
+    "headline": "Entdecken Sie hier eine Auswahl meiner Arbeiten - probieren Sie die Projekte aus, um meine Fähigkeiten in Aktion zu sehen.",
+    "poloLocoOne": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert.",
+    "poloLocoTwo": "Hilf Pepe, Münzen und Flaschen zu finden um gegen das Killerhuhn zu kämpfen.",
+    "joinOne": "Aufgabenmanager nach dem Vorbild des Kanban-Systems.",
+    "joinTwo": " Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
 }
