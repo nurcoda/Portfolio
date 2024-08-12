@@ -5,6 +5,10 @@
         <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
         <div class="burger-menu-line" [ngClass]="{'line-crossed': isOpen}"></div>
     </div>
+    <div class="language">
+        <p (click)="translate.switchLanguage('en')">EN</p>
+        <p (click)="translate.switchLanguage('de')">DE</p>
+    </div>
 
 </div>
 
