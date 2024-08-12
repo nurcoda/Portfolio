@@ -1,11 +1,12 @@
 import { NgClass } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../../app/translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgClass, TranslateModul],
+  imports: [NgClass, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
