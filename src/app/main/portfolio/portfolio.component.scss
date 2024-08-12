@@ -23,7 +23,6 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     opacity: 1;
-    /* Sichtbar nach dem Start der Animation */
 }
 
 @-webkit-keyframes zoomInDown {
@@ -221,43 +220,6 @@ h2 {
         transform: translateX(0);
     }
 }
-
-// .project-button-container {}
-
-// .project-button-container.slideInLeft {
-//     -webkit-animation-name: slideInLeft;
-//     animation-name: slideInLeft;
-//     -webkit-animation-duration: 1s;
-//     animation-duration: 1s;
-//     -webkit-animation-fill-mode: both;
-//     animation-fill-mode: both;
-// }
-
-// @-webkit-keyframes slideInLeft {
-//     0% {
-//         -webkit-transform: translateX(-100%);
-//         transform: translateX(-100%);
-//         visibility: visible;
-//     }
-
-//     100% {
-//         -webkit-transform: translateX(0);
-//         transform: translateX(0);
-//     }
-// }
-
-// @keyframes slideInLeft {
-//     0% {
-//         -webkit-transform: translateX(-100%);
-//         transform: translateX(-100%);
-//         visibility: visible;
-//     }
-
-//     100% {
-//         -webkit-transform: translateX(0);
-//         transform: translateX(0);
-//     }
-// }
 
 .project-description-wrapper {}
 

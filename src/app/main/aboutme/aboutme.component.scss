@@ -44,6 +44,8 @@ h2 {
 .profile-picture {
     position: relative;
     display: inline-block;
+    width: fit-content;
+    height: fit-content;
 }
 
 .profile-picture img {
