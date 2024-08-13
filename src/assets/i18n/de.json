@@ -31,5 +31,12 @@
     "dataSafe": "Ich stimme der Erhebung, Verarbeitung und Nutzung meiner personenbezogenen Daten gemäß den Datenschutzrichtlinien zu.",
     "emailSent": "Die E-Mail wurde gesendet",
     "sentButton": "Nachricht senden",
-    "legalNotice": "Impressum"
+    "legalNotice": "Impressum",
+    "imprint-link": "Impressum",
+    "imprint-headline": "Impressum",
+    "imprint-subheadline": "Diensteanbieter",
+    "imprint-contact": "Kontaktmöglichkeiten",
+    "imprint-email": "E-Mail-Adresse:",
+    "imprint-generate": "Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke",
+    "imprint-link-back": "Zurück zum"
 }

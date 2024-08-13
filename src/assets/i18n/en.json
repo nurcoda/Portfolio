@@ -31,5 +31,12 @@
     "dataSafe": "I've read the privacy policy and agree to the processing of my data as outlined.",
     "emailSent": "the email has been sent!",
     "sentButton": "Send message",
-    "legalNotice": "Legal notice"
+    "legalNotice": "Legal notice",
+    "imprint-link": "Imprint",
+    "imprint-headline": "Imprint",
+    "imprint-subheadline": "Service provider",
+    "imprint-contact": "Contact options",
+    "imprint-email": "E-mail address:",
+    "imprint-generate": "Created with free Datenschutz-Generator.de by Dr. Thomas Schwenke",
+    "imprint-link-back": "Back to"
 }
