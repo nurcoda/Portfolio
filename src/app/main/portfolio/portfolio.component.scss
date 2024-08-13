@@ -63,7 +63,7 @@
 
 h2 {
     text-align: center;
-    font-size: 78px;
+    font-size: clamp(22px, 5vw, 78px);
     font-weight: 800;
     margin: 0;
 
@@ -75,6 +75,7 @@ h2 {
 .ptxt {
     text-align: center;
     padding-bottom: 60px;
+    font-size: clamp(16px, 4vw, 22px);
 }
 
 .project-container {
@@ -110,6 +111,35 @@ h2 {
     border-color: rgb(8, 8, 8);
 }
 
+.image-wrapper2 {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    z-index: 10;
+}
+
+.image-wrapper2 img {
+    max-height: 100%;
+    height: 370px;
+}
+
+.image-wrapper2::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: -20px;
+    bottom: -15px;
+    border: 5px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.image-wrapper2:hover::before {
+    border-color: rgb(8, 8, 8);
+}
+
+
 .project-container-two {
     display: flex;
     flex-direction: row-reverse;
@@ -119,7 +149,7 @@ h2 {
 }
 
 .numberof-two {
-    font-size: 48px;
+    font-size: clamp(16px, 4vw, 48px);
     font-weight: 700;
     text-align: left;
     margin: 0;
@@ -224,7 +254,7 @@ h2 {
 .project-description-wrapper {}
 
 .numberof {
-    font-size: 48px;
+    font-size: clamp(16px, 4vw, 48px);
     font-weight: 700;
     text-align: right;
     margin: 0;
@@ -232,18 +262,19 @@ h2 {
 
 h3 {
     font-size: 45px;
+    font-size: clamp(22px, 4vw, 45px);
     font-weight: 800;
     margin: 0;
 }
 
 .code-description {
     color: #9747FF;
-    font-size: 23px;
+    font-size: clamp(16px, 4vw, 23px);
     margin: 0;
 }
 
 .simple-project-description {
-    font-size: 16px;
+    font-size: clamp(12px, 4vw, 16px);
     font-weight: 600;
     margin: 0;
 }
@@ -264,7 +295,7 @@ h3 {
     margin-top: 20px;
     cursor: pointer;
     border: solid rgb(0, 0, 0);
-    font-size: 21px;
+    font-size: clamp(16px, 4vw, 22px);
     color: rgb(15, 14, 14);
     padding: 10px 20px;
     transition: 835ms;
@@ -287,6 +318,41 @@ h3 {
         border-width: 3px;
         border-style: solid;
     }
+}
 
+@media (min-width: 290px) and (max-width: 1020px) {
+    .portfolio-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .image-wrapper {
+        height: 250px;
+    }
+
+    .image-wrapper2 {
+        height: 286px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-container-two {
+        flex-direction: column;
+    }
+
+    .numberof {
+        text-align: unset;
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1270px) {
+    .image-wrapper {
+        height: 250px;
+    }
 }
