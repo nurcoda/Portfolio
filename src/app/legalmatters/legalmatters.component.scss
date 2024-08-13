@@ -3,15 +3,17 @@ section {
     flex-direction: column;
     align-items: center;
     overflow-wrap: break-word;
-    padding: 50px 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: clamp(18px, 4vw, 48px);
 }
 
 h2 {
     margin-top: 10px;
+    font-size: clamp(18px, 4vw, 32px);
 }
 
 .seal {
@@ -34,15 +36,7 @@ h2 {
     }
 }
 
-@media (max-width: 570px) {
-    h1 {
-        font-size: 24px;
-    }
 
-    h2 {
-        font-size: 20px;
-    }
-}
 
 //private policye
 
@@ -55,10 +49,6 @@ section {
     align-items: center;
     overflow-wrap: break-word;
     flex-wrap: wrap;
-}
-
-h1 {
-    font-size: 48px;
 }
 
 h2 {
@@ -119,14 +109,6 @@ h3 {
         text-align: start;
     }
 
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
     h3 {
         font-size: 20px;
         overflow-wrap: break-word;
@@ -147,5 +129,12 @@ h3 {
         font-size: 12px;
         overflow-wrap: break-word;
         word-wrap: break-word;
+    }
+}
+
+@media (max-width: 570px) {
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

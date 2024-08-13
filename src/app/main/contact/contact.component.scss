@@ -2,7 +2,7 @@ footer {
     position: relative;
     background-image: url("./../../../assets/img/footerbackground.svg");
     background-size: cover;
-    height: 110vh;
+    height: 125vh;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -41,7 +41,7 @@ form {
 
 label {
     color: white;
-    font-size: clamp(16px, 4vw, 22px);
+    font-size: clamp(12px, 4vw, 22px);
 }
 
 .privacy-policy {
