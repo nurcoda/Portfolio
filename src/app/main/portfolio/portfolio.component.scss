@@ -349,10 +349,45 @@ h3 {
     .numberof {
         text-align: unset;
     }
+
 }
 
 @media (min-width: 1020px) and (max-width: 1270px) {
     .image-wrapper {
         height: 250px;
+    }
+
+    .image-wrapper2 {
+        height: 286px;
+    }
+}
+
+@media (max-width: 550px) {
+    .image-wrapper {
+        height: 200px;
+    }
+
+    .image-wrapper2 {
+        height: 226px;
+    }
+}
+
+@media (max-width: 445px) {
+    .image-wrapper {
+        height: 180px;
+    }
+
+    .image-wrapper2 {
+        height: 206px;
+    }
+}
+
+@media (max-width: 410px) {
+    .image-wrapper {
+        height: 130px;
+    }
+
+    .image-wrapper2 {
+        height: 156px;
     }
 }
