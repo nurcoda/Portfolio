@@ -1,8 +1,16 @@
+.background {
+    background-color: black;
+}
+
+.max-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-around;
     background-color: black;
-
 }
 
 p {

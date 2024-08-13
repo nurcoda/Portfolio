@@ -1,50 +1,59 @@
-<footer id="contact">
+<div class="background">
+    <div class="max-width">
+        <footer id="contact">
 
-    <h2>Say Hi!</h2>
+            <h2>Say Hi!</h2>
 
-    <div class="contact-discription">
+            <div class="contact-discription">
 
-        <h3>{{'newProject'|translate}}</h3>
-        <p>{{'newProject2'|translate}}</p>
+                <h3>{{'newProject'|translate}}</h3>
+                <p>{{'newProject2'|translate}}</p>
+            </div>
+
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm"
+                (ngModelChange)="updateCheckboxStatus(contactForm)">
+                <label for="name"></label>
+                <input [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name"
+                    placeholder="{{'yourName'|translate}}" required>
+
+                @if (!name.valid && name.touched){
+                <span class="red-alter-text">{{'pleaseName'|translate}}</span>
+                }
+
+                <label for="email"></label>
+                <input [(ngModel)]="contactData.email" #email="ngModel" type="email" id="email" name="email"
+                    placeholder="{{'yourEmail'|translate}}" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
+                @if (!email.valid && email.touched){
+                <span class="red-alter-text">{{'pleaseEmail'|translate}}</span>
+                }
+
+                <label for="message"></label>
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message"
+                    name="message" placeholder="{{'yourMessage'|translate}}" style="height: 200px;" required></textarea>
+
+                @if (!message.valid && message.touched){
+                <span class="red-alter-text">{{'pleaseMessage'|translate}}</span>
+                }
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="checkbox" id="checkbox_id" value="value"
+                        (click)="updateCheckboxStatus(contactForm)" [(ngModel)]="isCheckboxChecked">
+                    <label for="checkbox_id">{{'dataSafe'|translate}}</label>
+                </div>
+
+                <button type="submit" class="default-btn"
+                    [ngClass]="{'grey': !shouldApplyGrey, 'white':shouldApplyGrey}"
+                    [disabled]="!(contactForm.valid && isCheckboxChecked)">{{'sentButton'|translate}}</button>
+                <div class="it-is-sent" [ngClass]="{'enable': isFormSent, 'disable': !isFormSent}">
+                    {{'emailSent'|translate}}
+                </div>
+
+            </form>
+
+        </footer>
+
     </div>
 
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" (ngModelChange)="updateCheckboxStatus(contactForm)">
-        <label for="name"></label>
-        <input [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name"
-            placeholder="{{'yourName'|translate}}" required>
-
-        @if (!name.valid && name.touched){
-        <span class="red-alter-text">{{'pleaseName'|translate}}</span>
-        }
-
-        <label for="email"></label>
-        <input [(ngModel)]="contactData.email" #email="ngModel" type="email" id="email" name="email"
-            placeholder="{{'yourEmail'|translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-
-        @if (!email.valid && email.touched){
-        <span class="red-alter-text">{{'pleaseEmail'|translate}}</span>
-        }
-
-        <label for="message"></label>
-        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="message" id="message"
-            name="message" placeholder="{{'yourMessage'|translate}}" style="height: 200px;" required></textarea>
-
-        @if (!message.valid && message.touched){
-        <span class="red-alter-text">{{'pleaseMessage'|translate}}</span>
-        }
-
-        <div class="checkbox-wrapper">
-            <input type="checkbox" name="checkbox" id="checkbox_id" value="value"
-                (click)="updateCheckboxStatus(contactForm)" [(ngModel)]="isCheckboxChecked">
-            <label for="checkbox_id">{{'dataSafe'|translate}}</label>
-        </div>
-
-        <button type="submit" class="default-btn" [ngClass]="{'grey': !shouldApplyGrey, 'white':shouldApplyGrey}"
-            [disabled]="!(contactForm.valid && isCheckboxChecked)">{{'sentButton'|translate}}</button>
-        <div class="it-is-sent" [ngClass]="{'enable': isFormSent, 'disable': !isFormSent}">
-            {{'emailSent'|translate}}
-        </div>
-
-    </form>
-
-</footer>
+</div>

@@ -1,36 +1,40 @@
-<div class="about-me" id="aboutme">
+<div class="max-width">
 
-    <h2>{{ 'aboutMe' | translate }} </h2>
+    <div class="about-me" id="aboutme">
 
-    <div class="aboutme-wrapper">
-        <div class="content-wrapper">
-            <div>
-                <p class="pe">
-                </p>
-                <p class="pe">{{ 'aboutMeTextOne' | translate }}
-                </p>
-                <p> {{ 'aboutMeTextTwo' | translate }}
-                </p>
+        <h2>{{ 'aboutMe' | translate }} </h2>
+
+        <div class="aboutme-wrapper">
+            <div class="content-wrapper">
+                <div>
+                    <p class="pe">
+                    </p>
+                    <p class="pe">{{ 'aboutMeTextOne' | translate }}
+                    </p>
+                    <p> {{ 'aboutMeTextTwo' | translate }}
+                    </p>
+                </div>
+
+                <div class="home-remote">
+                    <img src="./assets/img/house.png" alt="House icone">
+                    <p>{{'based'| translate}}</p>
+                </div>
+
+                <div class="home-remote">
+                    <img src="./assets/img/laptop_chromebook.png" alt="Laptop icone">
+                    <p>{{'remote'| translate}}</p>
+                </div>
+
+                <div class="button-container">
+                    <a href="#contact"><button class="btn" id="customBtn">{{'letsTalk'| translate}}</button></a>
+                </div>
             </div>
 
-            <div class="home-remote">
-                <img src="./assets/img/house.png" alt="House icone">
-                <p>{{'based'| translate}}</p>
-            </div>
-
-            <div class="home-remote">
-                <img src="./assets/img/laptop_chromebook.png" alt="Laptop icone">
-                <p>{{'remote'| translate}}</p>
-            </div>
-
-            <div class="button-container">
-                <a href="#contact"><button class="btn" id="customBtn">{{'letsTalk'| translate}}</button></a>
+            <div class="profile-picture">
+                <img src="./assets/img/Mask group2.png" alt="Application Photo">
             </div>
         </div>
 
-        <div class="profile-picture">
-            <img src="./assets/img/Mask group2.png" alt="Application Photo">
-        </div>
     </div>
 
 </div>

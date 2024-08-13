@@ -1,8 +1,15 @@
-footer {
+.background {
     position: relative;
     background-image: url("./../../../assets/img/footerbackground.svg");
     background-size: cover;
-    height: 125vh;
+}
+
+.max-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+footer {
     padding-left: 100px;
     padding-right: 100px;
 }
