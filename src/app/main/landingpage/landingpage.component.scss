@@ -22,14 +22,14 @@ section {
 
 .name {
     padding-left: 24px;
-    font-size: 48px;
+    font-size: clamp(16px, 4vw, 48px);
     font-weight: 700;
     white-space: nowrap;
 }
 
 h1 {
     font-weight: 800;
-    font-size: 128px;
+    font-size: clamp(36px, 8vw, 128px);
     margin: 0;
 }
 
@@ -46,12 +46,12 @@ hr {
     padding-top: 16px;
     padding-left: 100px;
     padding-right: 100px;
-    max-width: 1920px;
 }
 
 #rotateText {
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
+    font-size: clamp(16px, 4vw, 22px);
 }
 
 .scroll-down-arrow-container {
@@ -121,4 +121,15 @@ hr {
         background-image: url('./../../../assets/img/scrollArrow/Arrow4.png');
     }
 
+}
+
+@media (min-width: 310px) and (max-width: 979px) {
+    .email-scroll-arrow {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .scroll-down-arrow-container {
+        font-size: 16px;
+    }
 }
