@@ -66,6 +66,9 @@ input[type="checkbox"] {
 input {
     width: 500px;
     border: none;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
     /* Entfernt die standardmäßige Umrandung */
     border-bottom: 2px solid white;
     /* Setzt eine untere Linie in Weiß */
@@ -89,6 +92,9 @@ input:focus {
 textarea {
     width: 500px;
     border: none;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
     /* Entfernt die standardmäßige Umrandung */
     border-bottom: 2px solid white;
     /* Setzt eine untere Linie in Weiß */

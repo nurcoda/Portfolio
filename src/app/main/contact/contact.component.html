@@ -39,9 +39,8 @@
             <label for="checkbox_id">{{'dataSafe'|translate}}</label>
         </div>
 
-        <input type="submit" class="default-btn" value="Send message"
-            [ngClass]="{'grey': !shouldApplyGrey, 'white':shouldApplyGrey}"
-            [disabled]="!(contactForm.valid && isCheckboxChecked)">
+        <button type="submit" class="default-btn" [ngClass]="{'grey': !shouldApplyGrey, 'white':shouldApplyGrey}"
+            [disabled]="!(contactForm.valid && isCheckboxChecked)">{{'sentButton'|translate}}</button>
         <div class="it-is-sent" [ngClass]="{'enable': isFormSent, 'disable': !isFormSent}">
             {{'emailSent'|translate}}
         </div>
