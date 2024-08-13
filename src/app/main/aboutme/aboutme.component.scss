@@ -137,8 +137,15 @@ p {
     }
 }
 
-@media (max-width: 520px) {
-    .profile-picture {
-        width: 302px;
+@media (max-width: 580px) {
+    .profile-picture img {
+        width: 70vw;
     }
+
+    .profile-picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
 }

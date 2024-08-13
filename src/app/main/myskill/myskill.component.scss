@@ -153,12 +153,33 @@ h1 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .borderskills {
         padding: 106px 110px 5px 106px;
     }
 }
 
-@media (max-width: 620px) {
-    h1 {}
+@media (max-width: 630px) {
+    h1 {
+        font-size: 60px;
+        width: 405px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 44px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 41px;
+        width: 281px;
+    }
+
+    .borderskills {
+        padding: 106px 110px 5px 106px;
+    }
 }
