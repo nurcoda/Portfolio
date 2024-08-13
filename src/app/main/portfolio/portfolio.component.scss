@@ -255,7 +255,10 @@ h3 {
     margin: 0;
 }
 
-.button-container {}
+.button-container {
+    gap: 6px;
+    display: flex;
+}
 
 .btn {
     margin-top: 20px;
