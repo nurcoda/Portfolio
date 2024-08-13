@@ -11,7 +11,7 @@
 
 h2 {
     text-align: center;
-    font-size: 78px;
+    font-size: clamp(16px, 4vw, 78px);
     font-weight: 800;
     margin: 0;
     margin-bottom: 2vh;
@@ -19,6 +19,10 @@ h2 {
     &:hover {
         color: #9747FF;
     }
+}
+
+p {
+    font-size: clamp(14px, 2vw, 22px);
 }
 
 .reference-posts-content {
@@ -41,7 +45,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 18px;
+    font-size: clamp(16px, 4vw, 18px);
     padding: 6%;
     box-sizing: border-box;
     border-width: 3px;
@@ -63,10 +67,28 @@ h2 {
 .img-quote {}
 
 .name-wrighter {
-    font-size: 22px;
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: 700;
 }
 
 .position-wrighter {}
 
-.text-wirghter {}
+.text-wirghter {
+    font-size: clamp(12px, 4vw, 18px);
+}
+
+
+
+@media (min-width: 290px) and (max-width: 1020px) {
+    .content-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+}
+
+@media (max-width: 410px) {
+    .reference-wrapper {
+        padding: 0;
+    }
+}
