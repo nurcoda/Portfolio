@@ -89,6 +89,10 @@ p {
 
 @media (max-width: 410px) {
     .reference-wrapper {
-        padding: 0;
+        padding: 4%;
+    }
+
+    .reference-posts-container {
+        min-width: 262px;
     }
 }

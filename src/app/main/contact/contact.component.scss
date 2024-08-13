@@ -4,12 +4,12 @@ footer {
     background-size: cover;
     height: 110vh;
     padding-left: 100px;
-
+    padding-right: 100px;
 }
 
 h2 {
     color: white;
-    font-size: 76px;
+    font-size: clamp(16px, 4vw, 78px);
     width: 80%;
     padding-top: 20vh;
 }
@@ -23,12 +23,13 @@ h2 {
 
 h3 {
     color: #9747FF;
-
+    font-size: clamp(16px, 4vw, 22px);
 }
 
 p {
     color: white;
     margin: 0;
+    font-size: clamp(16px, 4vw, 22px);
 }
 
 form {
@@ -40,6 +41,7 @@ form {
 
 label {
     color: white;
+    font-size: clamp(16px, 4vw, 22px);
 }
 
 .privacy-policy {
@@ -158,4 +160,23 @@ textarea:focus {
 
 .it-is-sent {
     color: green;
+}
+
+@media (min-width: 580px) and (max-width: 1020px) {
+
+    footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
 }

@@ -5,6 +5,10 @@
 
 }
 
+p {
+    font-size: clamp(16px, 4vw, 22px);
+}
+
 .logo-name {
     margin-top: 20px;
     color: white;
@@ -61,6 +65,7 @@
 
 .legal-notice {
     font-size: 16px;
+    font-size: clamp(12px, 4vw, 16px);
     text-decoration: none;
     transition: font-size 0.5s ease-in-out, text-decoration 0.5s ease-in-out;
     color: #9747FF;
