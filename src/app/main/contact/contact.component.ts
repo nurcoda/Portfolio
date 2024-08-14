@@ -30,11 +30,9 @@ export class ContactComponent {
 
   updateCheckboxStatus(form: NgForm) {
     if (form.valid) {
-      console.log('Form is valid');
       this.isCheckboxChecked = true;
       this.shouldApplyGrey = true; // Entferne 'grey', wenn die Checkbox aktiviert ist
     } else {
-      console.log('gehtnicht');
       this.isCheckboxChecked = false;
       this.shouldApplyGrey = false;  // Wende 'grey' an, wenn das Formular ungültig ist
     }

@@ -5,6 +5,9 @@ body {
     font-size: 22px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body::-webkit-scrollbar {
     width: 10px

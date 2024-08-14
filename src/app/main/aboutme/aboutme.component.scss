@@ -3,14 +3,23 @@
     margin: 0 auto;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
 .about-me {
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 80px;
 }
 
 h2 {
     font-size: clamp(16px, 4vw, 78px);
     font-weight: 800;
+    margin-top: 120px;
 
     &:hover {
         color: #9747FF;

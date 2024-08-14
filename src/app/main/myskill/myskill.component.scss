@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding-left: 100px;
     padding-right: 100px;
@@ -160,7 +164,8 @@ h1 {
 
 @media (max-width: 450px) {
     .borderskills {
-        padding: 106px 110px 5px 106px;
+        padding: 90px 69px 5px 61px;
+        gap: 61px
     }
 }
 
@@ -185,7 +190,8 @@ h1 {
     }
 
     .borderskills {
-        padding: 106px 110px 5px 106px;
+        padding: 90px 69px 5px 61px;
+        gap: 61px;
         min-width: 295px;
     }
 }
